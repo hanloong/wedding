@@ -17,14 +17,24 @@ section {
 .header .nav-link {
   color: white;
 }
+
+.header h1 {
+  font-size: 4rem;
+}
+
 .header .nav-link:hover {
   font-weight: bold;
   text-decoration: underline;
 }
 
+.section-heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
 #event {
   color: #57c1a5;
-  font-family: 'Dancing Script', cursive;
 }
 
 .event-details {
@@ -37,13 +47,8 @@ section {
   padding-top: 60px;
 }
 
-#stay {
-  font-family: 'Dancing Script', cursive;
-}
-
 #activities {
   color: #5cc3e8;
-  font-family: 'Dancing Script', cursive;
 }
 
 .sep {
