@@ -1,36 +1,93 @@
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  margin: 0;
+  padding: 0;
+}
 
-section {
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+@media (max-width: 750px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 48rem;
+  padding: 0 1rem;
+}
+
+section, header {
   box-sizing: border-box;
-  padding: 20px 0 50px;
+  padding: 1rem 0 3rem;
   position: relative;
 }
 
-.header {
+header {
   color: white;
   background-image: linear-gradient(#57c1a5, #79ceb8);
 }
 
-.fancy-title {
-  font-family: 'Dancing Script', cursive;
-}
-
-.header .nav-link {
+nav a {
   color: white;
+  font-family: 'Dancing Script', cursive;
+  padding: 0 1em;
+  text-decoration: none;
 }
 
-.header h1 {
-  font-size: 4rem;
-}
-
-.header .nav-link:hover {
-  font-weight: bold;
+nav a:hover {
   text-decoration: underline;
 }
 
+.hero {
+  align-items: center;
+}
+
+.hero-title {
+  font-family: 'Dancing Script', cursive;
+}
+
+@media (max-width: 750px) {
+  .hero-title {
+    text-align: center;
+  }
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+header h3 {
+  font-size: 1.5rem;
+}
+
 .section-heading {
+  display: block;
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
-  padding-bottom: 1rem;
+  margin-top: .5rem;
+  text-align: center;
+  width: 100%;
 }
 
 #event {
