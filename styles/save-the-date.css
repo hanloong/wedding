@@ -1,0 +1,87 @@
+html {
+  background-color: black;
+}
+
+body {
+  background: url("../images/save-the-date-bg.jpg") no-repeat;
+  background-size: cover;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+@media (max-width: 750px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 48rem;
+  padding: 0 1rem;
+}
+
+section, header {
+  box-sizing: border-box;
+  padding: 0 0 3rem;
+  position: relative;
+}
+
+header {
+  color: white;
+}
+
+.save-the-date {
+  margin-top: 12px;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.hero {
+  align-items: center;
+}
+
+.hero-title {
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px 2px #000000;
+  margin-left: 10px;
+}
+
+@media (max-width: 750px) {
+  .hero-title {
+    text-align: center;
+  }
+}
+
+.hero-image img {
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+header h3 {
+  font-size: 1.5rem;
+}

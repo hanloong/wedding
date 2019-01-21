@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
 body {
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  --main-bg-color: #f5f6f4;
+  --green-color: #57c1a5;
+  --green-bg-gradient: linear-gradient(var(--green-color), #79ceb8);
+
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  background-color: var(--main-bg-color);
 }
 
 .flex-grid {
@@ -34,15 +43,14 @@ section, header {
 }
 
 header {
-  color: white;
-  background-image: linear-gradient(#57c1a5, #79ceb8);
+  color: var(--main-bg-color);
+  background-image: var(--green-bg-gradient);
 }
 
 nav a {
-  color: white;
+  color: var(--main-bg-color);
   display: inline-block;
-  font-family: 'Dancing Script', cursive;
-  padding: .5rem 1rem;
+  padding: 1rem;
   text-decoration: none;
 }
 
@@ -55,7 +63,7 @@ nav a:hover {
 }
 
 .hero-title {
-  font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
 
 @media (max-width: 750px) {
@@ -69,7 +77,7 @@ nav a:hover {
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -84,11 +92,78 @@ header h3 {
 
 .section-heading {
   display: block;
-  font-family: 'Dancing Script', cursive;
   font-size: 3rem;
   margin-top: .5rem;
+  margin-bottom: .5rem;
   text-align: center;
   width: 100%;
+}
+
+#event-details {
+  color: var(--green-color);
+}
+
+.event-details {
+}
+
+.where-to-stay {
+  background: #5cc3e8;
+  background-image: linear-gradient(#5cc3e8, #20acdf);
+  color: #f5f6f4;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  align-items: center;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .hero-title {
+    text-align: center;
+  }
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+header h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.section-heading {
+  display: block;
+  font-size: 3rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.heading-inset {
+  margin-top: 2rem;
 }
 
 #event-details {
@@ -101,7 +176,7 @@ header h3 {
 .where-to-stay {
   background: #5cc3e8;
   background-image: linear-gradient(#5cc3e8, #20acdf);
-  color: white;
+  color: 
   padding-top: 60px;
 }
 
@@ -126,3 +201,6 @@ header h3 {
   top: 0;
   margin-top: -1px;
 }
+
+.info-box {
+  padding: 1em;
