@@ -1,16 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Abel|Amatic+SC');
 
 body {
   --main-bg-color: #f5f6f4;
-  --green-color: #57c1a5;
-  --green-bg-gradient: linear-gradient(var(--green-color), #79ceb8);
+  --second-bg-color: #e6e8e3;
+  --main-bg-gradient: linear-gradient(var(--main-bg-color), var(--second-bg-color));
+  --green-color: #00c1b2;
+  --second-green-color: #00b3a4;
+  --green-bg-gradient: linear-gradient(var(--green-color), var(--second-green-color));
+  --blue-color: #1aafd0;
+  --second-blue-color: #19abcc;
+  --blue-bg-gradient: linear-gradient(var(--blue-color), var(--second-blue-color));
+  --pink-color: #fc636b;
+  --second-pink-color:  #fb5059;
+  --pink-bg-gradient: linear-gradient(var(--pink-color), var(--second-pink-color));
+  --text-shadow: 1px 1px 2px lightgrey;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Abel', sans-serif;
+  color: #212529;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   background-color: var(--main-bg-color);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
 }
 
 .flex-grid {
@@ -18,6 +33,7 @@ body {
 }
 
 .col {
+  align-items: stretch;
   flex: 1;
 }
 
@@ -38,17 +54,17 @@ body {
 
 section, header {
   box-sizing: border-box;
-  padding: 0 0 3rem;
   position: relative;
 }
 
 header {
-  color: var(--main-bg-color);
-  background-image: var(--green-bg-gradient);
+  color: var(--green-color);
+  background-image: var(--main-bg-gradient);
+  text-shadow: var(--text-shadow);
 }
 
 nav a {
-  color: var(--main-bg-color);
+  color: var(--green-color);
   display: inline-block;
   padding: 1rem;
   text-decoration: none;
@@ -96,21 +112,45 @@ header h3 {
   margin-top: .5rem;
   margin-bottom: .5rem;
   text-align: center;
+  text-shadow: var(--text-shadow);
   width: 100%;
 }
 
-#event-details {
-  color: var(--green-color);
+section {
+  background-image: var(--main-bg-gradient);
 }
 
 .event-details {
+  background-image: var(--green-bg-gradient);
+}
+
+#event-details {
+  --text-shadow: 1px 1px 2px var(--second-green-color);
+}
+
+#optional-events {
+  color: var(--green-color);
 }
 
 .where-to-stay {
-  background: #5cc3e8;
-  background-image: linear-gradient(#5cc3e8, #20acdf);
-  color: #f5f6f4;
-  text-decoration: none;
+  background-image: var(--blue-bg-gradient);
+  padding-top: 60px;
+}
+
+#where-to-stay {
+  --text-shadow: 1px 1px 2px var(--second-blue-color);
+}
+
+#travel-info {
+  color: var(--blue-color);
+}
+
+.things-to-do {
+  background-image: var(--pink-bg-gradient);
+}
+
+#things-to-do {
+  --text-shadow: 1px 1px 2px var(--second-pink-color);
 }
 
 nav a:hover {
@@ -162,26 +202,19 @@ h4 {
   width: 100%;
 }
 
-.heading-inset {
-  margin-top: 2rem;
+.section-inverse {
+  color: var(--main-bg-color);
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
-#event-details {
-  color: #57c1a5;
+.section-inverse a {
+  color: var(--main-bg-color);
+  text-decoration: none;
 }
 
-.event-details {
-}
-
-.where-to-stay {
-  background: #5cc3e8;
-  background-image: linear-gradient(#5cc3e8, #20acdf);
-  color: 
-  padding-top: 60px;
-}
-
-#things-to-do {
-  color: #5cc3e8;
+.section-inverse a:hover {
+  text-decoration: underline;
 }
 
 .sep {
@@ -190,17 +223,32 @@ h4 {
   right: 0;
   width: 100%;
   height: 4vw;
+  fill: var(--main-bg-color);
 }
 
 .bottom {
   bottom: 0;
-  margin-bottom: -1px;
 }
 
 .top {
   top: 0;
-  margin-top: -1px;
+  fill: var(--second-bg-color);
 }
 
 .info-box {
   padding: 1em;
+}
+
+.map-responsive{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
