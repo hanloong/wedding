@@ -58,20 +58,39 @@ section, header {
 }
 
 header {
-  color: var(--green-color);
+  color: var(--second-main-bg-color);
   background-image: var(--main-bg-gradient);
   text-shadow: var(--text-shadow);
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  align-content: space-evenly;
+}
+
 nav a {
-  color: var(--green-color);
+  color: var(--second-main-bg-color);
   display: inline-block;
-  padding: 1rem;
-  font-weight: 700;
+  flex: 1;
+  padding: .5rem 1rem;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  nav {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+  }
 }
 
 nav a:hover {
-  color: var(--second-green-color);
+  color: black;
 }
 
 .hero {
