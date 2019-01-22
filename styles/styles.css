@@ -124,11 +124,11 @@ section {
   background-image: var(--green-bg-gradient);
 }
 
-#event-details {
+.event-details .section-heading {
   --text-shadow: 1px 1px 2px var(--second-green-color);
 }
 
-#optional-events {
+.optional-events .section-heading {
   color: var(--green-color);
 }
 
@@ -137,11 +137,11 @@ section {
   padding-top: 60px;
 }
 
-#where-to-stay {
+.where-to-stay .section-heading {
   --text-shadow: 1px 1px 2px var(--second-blue-color);
 }
 
-#travel-info {
+.travel-info .section-heading {
   color: var(--blue-color);
 }
 
@@ -149,7 +149,7 @@ section {
   background-image: var(--pink-bg-gradient);
 }
 
-#things-to-do {
+.things-to-do .section-heading {
   --text-shadow: 1px 1px 2px var(--second-pink-color);
 }
 
