@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Amatic+SC');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --main-bg-color: #f5f6f4;
   --second-bg-color: #e6e8e3;
@@ -266,4 +270,20 @@ h4 {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.back-to-top {
+  background: #212529;
+  bottom: 10px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px #212529;
+  color: var(--main-bg-color);
+  display: block;
+  font-family: 'Amatic SC', cursive;
+  position: fixed;
+  right: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 23px;
+  height: 23px;
 }
