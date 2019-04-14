@@ -252,11 +252,13 @@ h4 {
 
 .bottom {
   bottom: 0;
+  margin-bottom: -1px;
 }
 
 .top {
   top: 0;
   fill: var(--second-bg-color);
+  margin-top: -1px;
 }
 
 .info-box {
