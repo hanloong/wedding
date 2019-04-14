@@ -139,6 +139,11 @@ header h3 {
   width: 100%;
 }
 
+.section-subheading {
+  text-align: center;
+  width: 100%;
+}
+
 section {
   background-image: var(--main-bg-gradient);
 }
